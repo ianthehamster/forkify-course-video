@@ -139,10 +139,6 @@ const controlAddRecipe = async function (newRecipe) {
   }
 }; // controlAddRecipe() returns a Promise so we can reject the promise in the catch block
 
-const newFeature = function () {
-  console.log('Welcome to the application!');
-};
-
 // Publisher-Subscriber Pattern
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
@@ -152,7 +148,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
 };
 init();
 
