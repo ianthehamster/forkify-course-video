@@ -3,7 +3,7 @@ import View from './View';
 import icons from 'url:../../img/icons.svg'; // Parcel 2
 
 // importing fractional library from npm to convert decimals to fraction
-import fracty from 'fracty';
+// import fracty from 'fracty';
 
 // View module in recipe (MVC)
 class RecipeView extends View {
@@ -137,7 +137,7 @@ class RecipeView extends View {
                 <use href="${icons}#icon-check"></use>
               </svg>
               <div class="recipe__quantity">${
-                ing.quantity ? new fracty(ing.quantity).toString() : ''
+                ing.quantity ? ing.quantity : ''
               }</div>
               <div class="recipe__description">
                 <span class="recipe__unit">${ing.unit}</span>
